@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Портфолио</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <input type="hidden" value="1" id="helper-input">
+    <div class="wrapper">
+        <div class="mouse" aria-hidden="true">
+            <div class="mouse__view">View</div>
+        </div>
+        <div class="welcome-screen">
+            <div class="welcome-screen__inner">
+                <h1 class="welcome-screen__text"> Добро пожаловать в мое портфолио.</h1>
+                    <span class="welcome-screen__background"></span>
+                    <div class="welcome-screen__dots">
+                        <span class="dots-1"></span>
+                        <span class="dots-2"></span>
+                        <span class="dots-3"></span>
+                    </div>
+            </div>
+            <a class="welcome-screen__author" href="https://github.com/lissa-git">
+                Made by 
+                <span class="welcome-screen__author-link" >
+                    Lisa
+                    <picture>
+                        <source srcset="img/github.svg" type="image/webp">
+                        <img class="welcome-screen__author-img" src="img/github.svg" alt="">
+                    </picture>
+                </span>
+            </a>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="menu">
+                        <div class="menu-icon">
+                            <span class="line-1"></span>
+                            <span class="line-2"></span>
+                        </div>
+                        <div class="menu__inner">
+                            <div class="menu__container">
+                                <div class="menu__close">
+
+                                </div>
+                                <ul class="menu__list">
+                                    <li class="menu__list-item">
+                                        Список работ:
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <button class="menu__list-btn" data-id="bookville">Книжный магазин BOOKVILLE</button>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <button class="menu__list-btn" data-id="100cgi">Сайт студии интерьера 100CGI</button>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <button class="menu__list-btn" data-id="rueku"> Сайт компании RUEKU</button>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <button class="menu__list-btn" data-id="madeshkaf">Сайт магазина шкафов MADESHKAF</button>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <button class="menu__list-btn" data-id="gastroshef">Сервис доставки GASTRO CHEF</button>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a class="menu__list-link" href="https://github.com/lissa-git">
+                                            Мой GitHub
+                                            <picture>
+                                                <source srcset="img/github-menu.svg" type="image/webp">
+                                                <img class="menu__list-img" src="img/github-menu.svg" alt="">
+                                            </picture>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main-section slide-1">
+                <div class="container">
+                    <div class="main-section__inner slides">
+                        <div class="slides__about">
+                            <div class="slides__slide slides__slide--active" data-id="1">
+                                <div class="slides__title-wrapper">
+                                    <p class="slides__subtitle subtitle">Книжный интернет-магазин</p>
+                                    <h2 class="slides__title title-black">BOOKVILLE</h2>
+                                </div>
+                                <p class="slides__type">многостраничный сайт</p>
+                            </div>
+                            <div class="slides__slide" data-id="2">
+                                <div class="slides__title-wrapper">
+                                    <p class="slides__subtitle subtitle">Сайт студии интерьера</p>
+                                    <h2 class="slides__title title-black row-title"><span class="slides__title-number">100</span>CGI</h2>
+                                </div>
+                                <p class="slides__type">многостраничный сайт</p>
+                            </div>
+                            <div class="slides__slide" data-id="3">
+                                <div class="slides__title-wrapper">
+                                    <p class="slides__subtitle subtitle">Сайт компании по внедрению <span class="subtitle__second-line">1c продуктов</span></p>
+                                    <h2 class="slides__title">RUEKI</h2>
+                                </div>
+                                <p class="slides__type">landing page</p>
+                            </div>
+                            <div class="slides__slide" data-id="4">
+                                <div class="slides__title-wrapper">
+                                    <p class="slides__subtitle subtitle">Сайт магазина шкафов</p>
+                                    <h2 class="slides__title">MADE<span class="slides__title-line">SHKAF</span></h2>
+                                </div>
+                                <p class="slides__type">landing page</p>
+                            </div>
+                            <div class="slides__slide" data-id="5">
+                                <div class="slides__title-wrapper">
+                                    <p class="slides__subtitle subtitle">Сервис доставки</p>
+                                    <h2 class="slides__title">GASTRO<span class="slides__title-line">CHEF</span></h2>
+                                </div>
+                                <p class="slides__type">многостраничный сайт</p>
+                            </div>
+                        </div>
+                        <div class="slides__bg slide-bg">
+                            <div class="slide-bg__inner slide-bg__inner--current" data-id="1">
+                                <a class="slide-bg__link" data-bg="img/bookville.webp" href="https://lissa-git.github.io/books-shop/"></a>
+                            </div>
+                            <div class="slide-bg__inner index" data-id="2">
+                                <a class="slide-bg__link" data-bg="img/100cgi.webp" href="https://lissa-git.github.io/interior-studio/"></a>
+                              </div>
+                              <div class="slide-bg__inner" data-id="3">
+                                <a class="slide-bg__link" data-bg="img/rueku.webp" href="https://lissa-git.github.io/implementation-company/"></a>
+                              </div>
+                              <div class="slide-bg__inner" data-id="4">
+                                <a class="slide-bg__link" data-bg="img/madeshkaf.webp" href="https://lissa-git.github.io/wardrobes-shop/"></a>
+                              </div>
+                              <div class="slide-bg__inner" data-id="5">
+                                <a class="slide-bg__link" data-bg="img/gastro-chef.webp" href="https://lissa-git.github.io/delivery-service/"></a>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shapes" aria-hidden="true">
+                    <div class="shapes__item shapes__item--current" data-id="1">
+                        <div class="shapes__content" data-bg="#EDE3D8"></div>
+                    </div>
+                    <div class="shapes__item" data-id="2">
+                        <div class="shapes__content" data-bg="#D7E0DF"></div>
+                    </div>
+                    <div class="shapes__item" data-id="3">
+                        <div class="shapes__content" data-bg="#DFE5E7"></div>
+                    </div>
+                    <div class="shapes__item" data-id="4">
+                        <div class="shapes__content" data-bg="#BCB5AD"></div>
+                    </div>
+                    <div class="shapes__item" data-id="5">
+                        <div class="shapes__content" data-bg="#E0F6E1"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/bezier.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/swiped-events.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/start-animation.js"></script>
+    <script src="js/mouse.js"></script>
+    <script src="js/bg-slides.js"></script>
+    <script src="js/images-slides.js"></script>
+    <script src="js/text-slides.js"></script>
+    <script src="js/shapes-slides.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
